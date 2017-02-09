@@ -1,12 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netstandard1.5</TargetFramework>
+    <TargetFramework>netstandard1.0</TargetFramework>
     <Company>Zywave</Company>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Description>An uptime calculator that optionally supports accounting for exclusions and business hours.</Description>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <FileVersion>1.0.1.0</FileVersion>
-    <Version>1.0.3</Version>
+    <Version>1.0.4</Version>
     <Authors>John Cruikshank</Authors>
     <PackageProjectUrl>https://github.com/Zywave/UptimeCalculator</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Zywave/UptimeCalculator</RepositoryUrl>
