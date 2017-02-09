@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>netcoreapp1.0;net452</TargetFrameworks>
+    <TargetFramework>netstandard1.6</TargetFramework>
     <Company>Zywave</Company>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Description>An uptime calculator that optionally supports accounting for exclusions and business hours.</Description>
@@ -11,4 +11,7 @@
     <PackageProjectUrl>https://github.com/Zywave/UptimeCalculator</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Zywave/UptimeCalculator</RepositoryUrl>
   </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="System.ComponentModel.TypeConverter" Version="4.3.0" />
+  </ItemGroup>
 </Project>

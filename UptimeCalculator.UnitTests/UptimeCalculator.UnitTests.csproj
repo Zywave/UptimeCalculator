@@ -1,15 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netcoreapp1.0</TargetFramework>
-    <RootNamespace>UptimeCalculator</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="UptimeMathTests.GetRecurringTimeFrameIntervals.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.0.0-preview-20170106-08" />
-    <PackageReference Include="MSTest.TestAdapter" Version="1.1.8-rc" />
-    <PackageReference Include="MSTest.TestFramework" Version="1.0.8-rc" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.0.0-preview-20170125-04" />
+    <PackageReference Include="MSTest.TestAdapter" Version="1.1.10-rc2" />
+    <PackageReference Include="MSTest.TestFramework" Version="1.0.8-rc2" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\UptimeCalculator\UptimeCalculator.csproj" />
