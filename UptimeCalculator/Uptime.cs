@@ -10,8 +10,12 @@ namespace UptimeCalculator
         {
             TotalTime = totalTime;
             TotalUptime = totalTime;
+            TotalDowntime = TimeSpan.Zero;
             PercentUptime = 1.0;
             PercentDowntime = 0.0;
+            ShortestDowntime = TimeSpan.Zero;
+            LongestDowntime = TimeSpan.Zero;
+            AverageDowntime = TimeSpan.Zero;
 
             downtimes = downtimes as List<Interval> ?? downtimes?.ToList() ?? new List<Interval>();
             var downtimeSpans = downtimes.Select(d => d.TimeSpan).ToList();
