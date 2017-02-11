@@ -18,8 +18,11 @@ namespace UptimeCalculator
             if (data?.BusinessHours != null)
             {
                 var businessHoursTimeFrames = data.BusinessHours?.ToList() ?? new List<RecurringTimeFrame>();
-                var businessHours = GetRecurringTimeFrameIntervals(businessHoursTimeFrames, period).ToList();
-                nonBusinessHours = NormalizeAndReverse(businessHours, period).ToList();
+                if (businessHoursTimeFrames.Any())
+                {
+                    var businessHours = GetRecurringTimeFrameIntervals(businessHoursTimeFrames, period).ToList();
+                    nonBusinessHours = NormalizeAndReverse(businessHours, period).ToList();
+                }
             }
 
             exclusions.AddRange(nonBusinessHours);
