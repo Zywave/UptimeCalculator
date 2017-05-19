@@ -13,7 +13,8 @@ namespace UptimeCalculator
         Friday = 32,
         Saturday = 64,
         Weekdays = Monday | Tuesday | Wednesday | Thursday | Friday,
-        Weekends = Saturday | Sunday
+        Weekends = Saturday | Sunday,
+        Everyday = Weekdays | Weekends
     }
 
     internal static class DaysOfWeekExtensions
