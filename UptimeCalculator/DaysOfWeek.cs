@@ -17,7 +17,7 @@ namespace UptimeCalculator
         Everyday = Weekdays | Weekends
     }
 
-    internal static class DaysOfWeekExtensions
+    public static class DaysOfWeekExtensions
     {
         public static bool HasDayOfWeek(this DaysOfWeek daysOfWeek, DayOfWeek dayOfWeek)
         {
